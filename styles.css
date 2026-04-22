@@ -768,12 +768,19 @@ li {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1.2rem;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .feature-panel .feature-list li + li {
   margin-top: 0;
+}
+
+.feature-panel .feature-list li {
+  font-size: clamp(1.14rem, 1.12vw, 1.3rem);
+  line-height: 1.5;
 }
 
 .visual-card {
